@@ -42,7 +42,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 1260px;
 }
 
 header .search {
@@ -61,7 +61,6 @@ header .search div {
     left: 1px;
 }
 
-
 header .search input {
     width: 330px;
     padding: 11px 0 11px 24px;
@@ -75,7 +74,6 @@ header .search input::placeholder {
     font: 400 14px 'Poppins';
     color: #A9A9A9;
 }
-
 
 header .nav-imgs {
     display: flex;
@@ -103,9 +101,46 @@ header .img-bag {
     background-size: contain;
     width: 21px;
     height: 20px;
+    margin-left: 40px;
 }
 
 
+/* section banner */
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .img {
+    margin: 120px 15px;
+    background-image: url(./assets/Rectangle\ 26.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 420px;
+    height: 280px;
+}
+
+.banner .img p {
+    font: 600 12px 'Poppins';
+    color: #6A983C;
+}
+
+.banner .img h3 {
+    font-family: 600 22px 'Poppins';
+    color: #151515;
+}
+
+.banner .img .btn {
+    border: 2px solid #92C064;
+    border-radius: 12px;
+    width: 165px;
+    padding: 12px 0 12px 16px;
+    font: 700 15px 'Poppins';
+    color: #151515;
+}
+
+
+/* section .products */
 .products .wrapper-grid {
     display: grid;
     grid-template-columns: 270px 270px 270px;
@@ -160,4 +195,27 @@ header .img-bag {
     width: 90px;
     text-align: center;
     padding: 7px 0;
+}
+
+
+/* footer */
+footer div {
+    margin-top: 137px;
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: repeat(4, 20px);
+    justify-content: center;
+    justify-items: flex-start;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+footer div h4 {
+    font: 600 18px 'Poppins';
+    color: #151515;
+}
+
+footer div p {
+    font: 400 14px 'Poppins';
+    color: #6A983C;
 }
