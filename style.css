@@ -23,7 +23,6 @@
 }
 
 * {
-    /* font-weight: 400; */
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
@@ -104,7 +103,7 @@ header .img-bag {
     background-size: contain;
     width: 21px;
     height: 20px;
-    margin-left: 40px;
+    margin: 0 50px;
 }
 
 
@@ -121,6 +120,7 @@ header .img-bag {
     background-size: contain;
     width: 420px;
     height: 280px;
+
 }
 
 .banner .img {
@@ -129,6 +129,7 @@ header .img-bag {
     background-size: contain;
     width: 420px;
     height: 280px;
+    border-radius: 10px;
 }
 
 .banner .img p {
@@ -144,7 +145,7 @@ header .img-bag {
 }
 
 .banner .img .btn {
-    margin: 90px 0 0 35px ;
+    margin: 90px 0 0 35px;
     border: 2px solid #92C064;
     border-radius: 12px;
     width: 165px;
@@ -200,6 +201,12 @@ header .img-bag {
     align-items: center;
 }
 
+.products .wrapper-grid .item .price .discount h3 {
+    font-family: 600 12px 'Poppins';
+    text-decoration-line: line-through;
+    color: #A9A9A9;
+}
+
 .products .wrapper-grid .item .btn {
     background: #6A983C;
     border: 2px solid #46760A;
@@ -232,4 +239,57 @@ footer div h4 {
 footer div p {
     font: 400 14px 'Poppins';
     color: #6A983C;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+
+    header {
+        width: 600px;
+    }
+
+    header .search {
+        display: none;
+    }
+
+    /* media main  */
+    main .banner {
+        display: none;
+    }
+
+    .products {
+        margin-top: 100px;
+    }
+
+
+    .products .wrapper-grid {
+        display: block;
+        width: 280px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .products .wrapper-grid .item {
+        margin-top: 20px;
+    }
+
+    footer div {
+        display: flex;
+        margin-top: 80px;
+    }
+
+    footer div p {
+        display: none;
+    }
+
+    .products .wrapper-grid .item .price .discount h3 {
+        font-family: 600 12px 'Poppins';
+        text-decoration-line: line-through;
+        color: #A9A9A9;
+        text-align: start;
+    }
+
 }
